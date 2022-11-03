@@ -1,0 +1,19 @@
+<svg
+    ref="svg"
+    xmlns="http://www.w3.org/2000/svg"
+    :width="200"
+    :height="200"
+    viewBox="0 0 90 144"
+    :class="insideClass"
+    fill="white"
+  >
+    >
+    <text
+      transform="translate(0 111)"
+      font-size="144"
+      font-family="Mono45"
+      letter-spacing="-0.26em"
+    >
+      <tspan x="0" y="0">//</tspan>
+    </text>
+  </svg>
