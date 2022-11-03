@@ -1,15 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image, Picture } from '@astrojs/image/components';
+// import pict from '../assets/avatar.jpeg'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="ALEX DUVAL">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
+		<!-- <Image src="https://avatars.githubusercontent.com/u/13418668?v=4.png" height="200" width="200" aspecRatio="1:1" format="jpeg" alt="Alex DUVAL"/> -->
+
+		<img  src="https://avatars.githubusercontent.com/u/13418668?v=4.png" height="200" width="200" alt="" class="rounded-lg">
+
+		<h1>Alex<span class="text-gradient"> DUVAL</span></h1>
+		<!-- <p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		</p> -->
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
