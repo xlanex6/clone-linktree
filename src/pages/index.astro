@@ -1,40 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import { Image, Picture } from '@astrojs/image/components';
-// import pict from '../assets/avatar.jpeg'
+import Vcard from "../components/Vcard.vue";
 ---
+
+
 
 <Layout title="ALEX DUVAL">
 	<main>
-		<!-- <Image src="https://avatars.githubusercontent.com/u/13418668?v=4.png" height="" width="200" aspecRatio="1:1" format="jpeg" alt="Alex DUVAL"/> -->
-
+		
 		<header class="flex mb-8">
+			<!-- <Image src="https://avatars.githubusercontent.com/u/13418668?v=4.png" height="" width="200" aspecRatio="1:1" format="jpeg" alt="Alex DUVAL"/> -->
 			
 					<img  src="https://avatars.githubusercontent.com/u/13418668?v=4.png" height="150" width="150" alt="" class="rounded-lg border">
 			
-					<h1 class="pl-4">Alex<span class="text-gradient"> DUVAL</span></h1>
+					<div class="pl-4">
+						<h1>Alex<span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-700"> DUVAL</span></h1>
+						<h2 class="text-3xl text-neutral-500 font-bold tracking-wide">WEB Developper</h2>
+						<p class="my-4 text-xl text-neutral-700">Créateur de solutions, catalyseur d'idées</p>
+					</div>
 
 		</header>
-		<!-- <p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p> -->
-		<ul role="list" class="link-card-grid">
+		<ul role="list" class="grid grid-cols-2 gap-4">
 			<Card
 				link="tel:+33620512354"
 				logo="mdi:phone"
-				color="#000000"
+				color="#374151"
 			/>
 			<Card
 				link="mailto:alexduval71@gmail.com"
 				logo="mdi:email"
-				color="#000000"
+				color="#374151"
 			/>
 			<Card
 				link="https://twitter.com/xlanex6"
 				logo="brandico:twitter-bird"
 				color="#1da1f2"
+			/>
+			<Card
+				link="https://github.com/xlanex6"
+				logo="mdi:github"
+				color="#000000"
 			/>
 			<Card
 				link="https://www.linkedin.com/in/alexduval71/"
@@ -51,51 +57,24 @@ import { Image, Picture } from '@astrojs/image/components';
 				logo="mdi:spotify"
 				color="#1db954"
 			/>
+			<Card
+				link="https://www.youtube.com/@AlexDuval71"
+				logo="mdi:youtube"
+				color="#ff0000"
+			/>
+			<div class="col-span-2">
+				<Vcard client:only />
+			</div>
+
 		</ul>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+		@apply m-auto p-6 max-w-2xl;
 	}
 	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+		@apply text-5xl font-black
 	}
 </style>

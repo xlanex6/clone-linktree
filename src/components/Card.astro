@@ -7,16 +7,16 @@ export interface Props {
 
 import { Icon } from 'astro-icon'
 
-const { link, logo, color } = Astro.props;
+const { link, logo, color} = Astro.props;
 ---
 
-<li class="link-card flex justify-center w-full rounded-lg py-2 hover:cursor-pointer">
+<li class="bg flex justify-center w-full rounded-lg py-2 hover:cursor-pointer">
 	<a href={link} class="hover:cursor-pointer">
 		<Icon class="h-16 w-16 text-white" name={logo}>
 	</a>
 </li>
 <style define:vars={{color}}>
-	.link-card {
+	.bg {
 		/* @apply flex justify-center w-full rounded-lg py-2 */
 		background-color: var(--color);
 		}
