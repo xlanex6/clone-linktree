@@ -1,6 +1,6 @@
 import VCard from 'vcard-creator'
 
-export async function get({  }) {
+export function get() {
   
   const myVard = new VCard()
   myVard
@@ -10,10 +10,13 @@ export async function get({  }) {
     .addJobtitle('Web Developer')
     .addRole('CTO as Service')
     .addURL('http://www.alexduval.fr')
-    .setFormat('vcalendar')
   
-  return {
-    body: myVard.toString(),
-    encoding: 'binary'
-  }
+  const vcard = myVard.toString()
+  
+  return new Response(vcard, {
+    status: 200,
+    headers: {
+      'content-type':'text/vcard'
+    }
+  })
 }
