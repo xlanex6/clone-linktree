@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/image': ^0.11.1
+  '@astrojs/netlify': ^1.2.0
   '@astrojs/tailwind': ^2.1.2
   '@astrojs/vue': ^1.2.1
   astro: ^1.6.0
@@ -13,6 +14,7 @@ specifiers:
 
 dependencies:
   '@astrojs/image': 0.11.1
+  '@astrojs/netlify': 1.2.0
   '@astrojs/tailwind': 2.1.2_tailwindcss@3.2.1
   '@astrojs/vue': 1.2.1_vue@3.2.41
   astro: 1.6.3
@@ -123,6 +125,13 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.2
+    dev: false
+
+  /@astrojs/netlify/1.2.0:
+    resolution: {integrity: sha512-nFWdgR5OVUCdYt/d3U3XBYPEMukGwxzRKH4D20lk8SjQsKTtvhJpRIJWrhlGJApidjms1WJXa8xh6A8BQYRmmA==}
+    dependencies:
+      '@astrojs/webapi': 1.1.1
+      esbuild: 0.14.54
     dev: false
 
   /@astrojs/prism/1.0.2:
