@@ -7,6 +7,7 @@ specifiers:
   '@astrojs/vue': ^1.2.1
   astro: ^1.6.0
   astro-icon: ^0.8.0
+  file-saver: ^2.0.5
   tailwindcss: ^3.2.1
   vcard-creator: ^0.5.0
   vue: ^3.2.30
@@ -18,6 +19,7 @@ dependencies:
   '@astrojs/vue': 1.2.1_vue@3.2.41
   astro: 1.6.3
   astro-icon: 0.8.0
+  file-saver: 2.0.5
   tailwindcss: 3.2.1
   vcard-creator: 0.5.0
   vue: 3.2.41
@@ -2028,6 +2030,10 @@ packages:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.2.1
+    dev: false
+
+  /file-saver/2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
     dev: false
 
   /fill-range/7.0.1:
