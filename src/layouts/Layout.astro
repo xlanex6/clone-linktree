@@ -14,18 +14,28 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="author" content="Alex Duval">
+		<meta name="description" content="Toutes les coordonnées d'Alex DUVAL. Téléphone, email, et tous les autres réseaux sociaux."/>
+		
+
+		<link rel="canonical" href="http://me.alexduval.fr/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="page" />
+		<meta property="og:url" content="http://me.alexduval.fr/" />
+		<meta
+			property="og:image"
+			content="https://avatars.githubusercontent.com/u/13418668?v=4.png"
+		/>
+		<meta property="og:image:alt" content="Avatar Alex DUVAL" />
+		<meta property="og:site_name" content="Contactez d'Alex DUVAL" />
 	</head>
-	<body class="bg-gradient-to-tl from-slate-200 to-slate-300">
+	<body class="bg-gradient-to-tl from-slate-200 to-slate-300 min-h-screen">
 		<slot />
+		<style is:global>
+			html {
+				font-family: system-ui, sans-serif;
+				background-color: #f6f6f6;
+			}
+		</style>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-</style>

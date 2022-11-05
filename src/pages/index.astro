@@ -1,28 +1,38 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 // import Vcard from "../components/Vcard.vue";
 ---
-<Layout title="ALEX DUVAL">
-	<main>
-		
-		<header class="flex mb-8">
-			
-					<img  src="https://avatars.githubusercontent.com/u/13418668?v=4.png" alt="" class="rounded-lg border h-28 w-28 md:h-32 md:w-32 shadow-lg">
-			
-					<div class="pl-4">
-						<h1>Alex<span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-700"> DUVAL</span></h1>
-						<h2 class=" text-xl md:text-3xl text-neutral-500 font-bold tracking-wide">WEB Developper</h2>
-						<p class="my-4 text-lg md:text-xl text-neutral-700">Créateur de solutions, catalyseur d'idées</p>
-					</div>
 
+<Layout title="Alex DUVAL - WEB Devloper">
+	<main>
+		<header class="flex mb-8">
+			<img
+				src="https://avatars.githubusercontent.com/u/13418668?v=4.png"
+				alt=""
+				class="rounded-lg border h-28 w-28 md:h-32 md:w-32 shadow-lg"
+			/>
+
+			<div class="pl-4">
+				<h1>
+					Alex<span
+						class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-700"
+					>
+						DUVAL</span
+					>
+				</h1>
+				<h2
+					class="text-xl md:text-3xl text-neutral-500 font-bold tracking-wide"
+				>
+					WEB Developper
+				</h2>
+				<p class="my-4 text-lg md:text-xl text-neutral-700">
+					Créateur de solutions, catalyseur d'idées
+				</p>
+			</div>
 		</header>
 		<ul role="list" class="grid grid-cols-2 gap-4">
-			<Card
-				link="tel:+33620512354"
-				logo="mdi:phone"
-				color="#334155"
-			/>
+			<Card link="tel:+33620512354" logo="mdi:phone" color="#334155" />
 			<Card
 				link="mailto:alexduval71@gmail.com"
 				logo="mdi:email"
@@ -43,11 +53,7 @@ import Card from '../components/Card.astro';
 				logo="mdi:linkedin"
 				color="#0077b5"
 			/>
-			<Card
-				link="https://double-slash.dev"
-				logo="logo"
-				color="#FFD800"
-			/>
+			<Card link="https://double-slash.dev" logo="logo" color="#FFD800" />
 			<Card
 				link="https://open.spotify.com/show/539N9WvnUguUzMWluPp2UK"
 				logo="mdi:spotify"
@@ -60,13 +66,8 @@ import Card from '../components/Card.astro';
 			/>
 			<div class="col-span-2">
 				<!-- <Vcard client:only /> -->
-						<Card
-				link="/AlexDUVAL.vcard"
-				logo="entypo:v-card"
-				color="#334155"
-			/>
+				<Card link="/AlexDUVAL.vcard" logo="entypo:v-card" color="#334155" />
 			</div>
-
 		</ul>
 	</main>
 </Layout>
@@ -76,6 +77,6 @@ import Card from '../components/Card.astro';
 		@apply m-auto p-6 max-w-2xl;
 	}
 	h1 {
-		@apply text-3xl md:text-5xl font-black
+		@apply text-3xl md:text-5xl font-black;
 	}
 </style>
