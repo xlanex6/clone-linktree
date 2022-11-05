@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2022-11-05T08:12:04.042Z
+EMAIL;INTERNET:alexduval71@gmail.com
+N;CHARSET=utf-8:DUVAL;Alex;;;
+FN;CHARSET=utf-8:Alex DUVAL
+TEL;WORK:+33620512354
+TITLE;CHARSET=utf-8:Web Developer
+ROLE;CHARSET=utf-8:CTO as Service
+URL:http://www.alexduval.fr
+END:VCARD

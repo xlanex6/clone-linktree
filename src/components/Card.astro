@@ -3,15 +3,16 @@ export interface Props {
 	logo: string;
 	color: string;
 	link: string;
+	download: boolean;
 }
 
 import { Icon } from 'astro-icon'
 
-const { link, logo, color} = Astro.props;
+const { link, logo, color, download} = Astro.props;
 ---
 
 <li class="bg flex justify-center w-full rounded-lg py-2 hover:cursor-pointer">
-	<a href={link} class="hover:cursor-pointer">
+	<a href={link} class="hover:cursor-pointer" download={download}>
 		<Icon class="h-16 w-16 text-white" name={logo}>
 	</a>
 </li>

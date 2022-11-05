@@ -11,15 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.11.1",
     "@astrojs/netlify": "^1.2.0",
     "@astrojs/tailwind": "^2.1.2",
     "@astrojs/vue": "^1.2.1",
-    "astro": "^1.6.0",
+    "astro": "^1.6.3",
     "astro-icon": "^0.8.0",
     "file-saver": "^2.0.5",
-    "tailwindcss": "^3.2.1",
+    "tailwindcss": "^3.2.2",
     "vcard-creator": "^0.5.0",
-    "vue": "^3.2.30"
+    "vue": "^3.2.41"
   }
 }
