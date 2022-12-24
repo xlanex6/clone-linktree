@@ -10,9 +10,9 @@ import { saveAs } from 'file-saver';
     .addEmail('alexduval71@gmail.com')
     .addName("DUVAL", 'Alex')
     .addPhoneNumber('+33620512354', 'WORK')
-    .addJobtitle('Web Developer')
+    .addJobtitle('Web Developer / Teacher')
     .addRole('CTO as Service')
-    .addURL('http://www.alexduval.fr')
+    .addURL('http://me.alexduval.fr')
   
 const vcard = myVard.toString()
 
