@@ -3,21 +3,24 @@ export interface Props {
 	logo: string;
 	color: string;
 	link: string;
+	text: string;
 }
 
 import { Icon } from 'astro-icon'
 
-const { link, logo, color} = Astro.props;
+const { link, logo, color, text} = Astro.props;
 ---
 
 <li class="bg flex justify-center w-full rounded-lg py-2 hover:cursor-pointer">
 	<a href={link} class="hover:cursor-pointer">
-		<Icon class="h-16 w-16 text-white" name={logo}>
+		<Icon class="h-16 w-16 text-white m-auto" name={logo}/>
+		<p class=" text-white text-center font-light text-xl tracking-wide">{text}</p>
 	</a>
 </li>
 <style define:vars={{color}}>
 	.bg {
 		/* @apply flex justify-center w-full rounded-lg py-2 */
-		background-color: var(--color);
+		background: var(--color);
 		}
 </style>
+

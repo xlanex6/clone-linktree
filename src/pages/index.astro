@@ -6,15 +6,15 @@ import Card from "../components/Card.astro";
 
 <Layout title="Alex DUVAL - WEB Devloper">
 	<main>
-		<header class="flex mb-8">
+		<header class="mb-8">
 			<img
 				src="https://avatars.githubusercontent.com/u/13418668?v=4.png"
 				alt=""
-				class="rounded-lg border h-28 w-28 md:h-32 md:w-32 shadow-lg"
+				class="rounded-full border h-28 w-28 md:h-32 md:w-32 shadow-xl m-auto"
 			/>
 
 			<div class="pl-4">
-				<h1>
+				<h1 class="text-center my-4">
 					Alex<span
 						class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-600 to-neutral-700"
 					>
@@ -22,13 +22,13 @@ import Card from "../components/Card.astro";
 					>
 				</h1>
 				<h2
-					class="text-xl md:text-3xl text-neutral-500 font-bold tracking-wide"
+					class="text-xl md:text-2xl text-neutral-500 tracking-wide uppercase text-center"
 				>
-					WEB Developper
+					Web Developer <br> Teacher<br> Ski Instructor
 				</h2>
-				<p class="my-4 text-lg md:text-xl text-neutral-700">
+				<!-- <p class="my-4 text-lg md:text-xl text-neutral-700">
 					Créateur de solutions, catalyseur d'idées
-				</p>
+				</p> -->
 			</div>
 		</header>
 		<ul role="list" class="grid grid-cols-2 gap-4">
@@ -53,20 +53,27 @@ import Card from "../components/Card.astro";
 				logo="mdi:linkedin"
 				color="#0077b5"
 			/>
-			<Card link="https://double-slash.dev" logo="logo" color="#FFD800" />
 			<Card
-				link="https://open.spotify.com/show/539N9WvnUguUzMWluPp2UK"
-				logo="mdi:spotify"
-				color="#1db954"
+				link="https://www.instagram.com/alexduval71/"
+				logo="mdi:instagram"
+				color="linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);"
 			/>
 			<Card
-				link="https://www.youtube.com/@AlexDuval71"
-				logo="mdi:youtube"
-				color="#ff0000"
+			link="https://open.spotify.com/show/539N9WvnUguUzMWluPp2UK"
+			logo="mdi:spotify"
+			color="#1db954"
+			/>
+			<Card
+			link="https://www.youtube.com/@AlexDuval71"
+			logo="mdi:youtube"
+			color="#ff0000"
 			/>
 			<div class="col-span-2">
+				<Card link="https://double-slash.dev" logo="logo" color="#FFD800" />
+			</div>
+			<div class="col-span-2">
 				<!-- <Vcard client:only /> -->
-				<Card link="/AlexDUVAL.vcard" logo="entypo:v-card" color="#334155" />
+				<Card link="/AlexDUVAL.vcard" logo="entypo:v-card" color="#334155"  text="Ajouter aux CONTACTS"/>
 			</div>
 		</ul>
 	</main>
